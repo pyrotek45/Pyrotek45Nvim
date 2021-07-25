@@ -13,9 +13,10 @@ My neovim config inspired by spacevim (but with a smaller footprint)
 # basic usage
 
 The `space` key is the leader for many of the added keybindings.
-to use the understand how to use the keybindings here, just remember, the `->` means followed. 
 
-so `space -> w` means pressing space(letting go) and then quickly (within a second) pressing w.
+To understand how to use the keybindings here, just remember `->` means followed. 
+
+So, for example`space -> w` means pressing space (then letting go) and then quickly (within a second) pressing w.
 
 - Main keybindings
   - save : space -> w
