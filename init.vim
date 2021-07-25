@@ -75,6 +75,9 @@ noremap <space>( gT
 noremap <space>) gt
 noremap <space>c :tabo <cr>
 
+"terminal commands
+noremap <space>t :!
+
 "tools"
 "table"
 vmap <space>t :!column -t <cr> gv
@@ -86,27 +89,4 @@ vmap <space>h <gv
 "normal command highlight"
 vmap <space>n :norm 
 
-"auto groups for file handling"
-augroup pascal_file
-    autocmd!
-    autocmd filetype pascal noremap <buffer> <F5> :w <bar> !fpc % && %:p:r <cr>
-    autocmd filetype freepascal noremap <buffer> <F5> :w <bar> !fpc % && %:p:r <cr>
-    autocmd filetype freepascal noremap <buffer> <space>ac :norm I// <cr>
-    autocmd filetype freepascal noremap <buffer> <space>rc :norm 0f/xx <cr>
-augroup END
 
-augroup bash_script
-    autocmd!
-    autocmd filetype sh noremap <buffer> <F5> :w <bar> !%:p<cr>
-augroup END
-
-autocmd BufNewFile,BufRead *.nim :set filetype=nim
-augroup nim_file
-    autocmd!
-    autocmd filetype nim noremap <buffer> <F5> :w <bar> !nim c -r %:p<cr>
-augroup END
-
-augroup python_file
-    autocmd!
-    autocmd filetype python noremap <buffer> <F5> :w <bar> !python3 %:p<cr>
-augroup END
