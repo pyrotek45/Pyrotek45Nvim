@@ -20,8 +20,8 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
 
 - Main keybindings
   - save : `space -> w`
-  - quit : `space -> q` (this is not exit neovim unless you have saved your project)
-  - force quit : `space -> Q` (this is for neovim to quit regardless if you have saved your file or not)
+  - quit : `space -> q` (this will not exit neovim unless you have saved your project)
+  - force quit : `space -> Q` (this will force neovim to quit regardless if you have saved your file or not)
   - new tab : `space -> n` (this will create an emtpy new tab)
   - read : `space -> r` (this will prompt you for a command (ls for example) and the output of that command will be added to your text)
   - terminal command : `space -> t` (this will prompt you for a command to run in your terminal)
