@@ -32,21 +32,19 @@ else
     option="$1"
 fi
 
-while true; do
-   case "$option" in
-      1) # display Help
-         post_install
-         install_normal
-         exit;;
-      2) # display Help
-          post_install
-          install_flatpak
-         exit;;
-      3) # display Help
-         post_install
-         install_normal
-         install_flatpak
-         exit;;
-   esac
-   break;
-done 
+case "$option" in
+   1) # display Help                                                         
+      post_install                                                           
+      install_normal                                                         
+      exit;;                                                                 
+   2) # display Help                                                         
+       post_install                                                          
+       install_flatpak                                                       
+      exit;;                                                                 
+   3) # display Help                                                         
+      post_install                                                           
+      install_normal                                                         
+      install_flatpak                                                        
+      exit;;                                                                 
+esac 
+
