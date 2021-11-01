@@ -25,33 +25,25 @@ then
     echo "1. Install to normal installation"
     echo "2. Install to flatpak installation"
     echo "3. Install to both normal and flatpak installations"
-    echo "4. Quit"
 
-    printf "(1,2,3,4)"
+    printf "(1,2,3)"
     read option
 else
     option="$1"
 fi
 
-case $option in
-    1)
-        post_install
-        install_normal
-        ;;
-    2)
-        post_install
-        install_flatpak
-        ;;
-    3)
-        post_install
-        install_normal
-        install_flatpak
-        ;;
-    4)
-        exit
-        ;;
-    *)
-        echo "Please choose between the numbers 1, 2, 3 and 4 or pass them as arguments after the script"
-        exit 1
-        ;;
-esac
+while true; do
+   case "$option" in
+      1) # display Help
+         normal_install
+         flatpak_install
+         exit;;
+      2) # display Help
+          normal_install
+         exit;;
+      3) # display Help
+         flatpak_install
+         exit;;
+   esac
+   break;
+done 
