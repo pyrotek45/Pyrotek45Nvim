@@ -41,52 +41,52 @@ set ignorecase
 let g:netrw_banner = 0
 let g:netrw_liststyle = 4
 
+let mapleader = " "
 
 "exit terminal mode with escape"
 tnoremap <esc> <C-\><C-n> 
 
 "main helper functions"
-noremap <space>w  :w <cr>
-noremap <space>Q :q! <cr> 
-noremap <space>q  :q <cr> 
-noremap <space>n  :tabedit <cr> 
-noremap <space>r  :read!  
+noremap <leader>w  :w <cr>
+noremap <leader>Q :q! <cr> 
+noremap <leader>q  :q <cr> 
+noremap <leader>n  :tabedit <cr> 
+noremap <leader>r  :read!  
 
 "edit files"
-noremap <space>ec :tabedit $MYVIMRC <cr> 
-noremap <space>sc :source $MYVIMRC <cr> 
-noremap <space>e. :e . <cr> 
-noremap <space>en :tabedit . <cr> 
-noremap <space><tab> :Lexplore <bar> :vertical resize 40 <cr> 
+noremap <leader>ec :tabedit $MYVIMRC <cr> 
+noremap <leader>sc :source $MYVIMRC <cr> 
+noremap <leader>e. :e . <cr> 
+noremap <leader>en :tabedit . <cr> 
+noremap <leader><tab> :Lexplore <bar> :vertical resize 40 <cr> 
 
 "window movement"
-noremap <space>l <C-w>l 
-noremap <space>k <C-w>k 
-noremap <space>j <C-w>j 
-noremap <space>h <C-w>h 
-noremap <space>o <C-w>o 
+noremap <leader>l <C-w>l 
+noremap <leader>k <C-w>k 
+noremap <leader>j <C-w>j 
+noremap <leader>h <C-w>h 
+noremap <leader>o <C-w>o 
 
 "splits"
-noremap <space>sv :vsplit <cr>
-noremap <space>sh :split <cr>
+noremap <leader>sv :vsplit <cr>
+noremap <leader>sh :split <cr>
 
 "tab movement"
-noremap <space>( gT
-noremap <space>) gt
-noremap <space>c :tabo <cr>
+noremap <leader>( gT
+noremap <leader>) gt
+noremap <leader>c :tabo <cr>
 
 "terminal commands
-noremap <space>t :!
+noremap <leader>t :!
 
 "tools"
 "table"
-vmap <space>t :!column -t <cr> gv
+vmap <leader>t :!column -t <cr> gv
 
 "indent"
-vmap <space>l >gv
-vmap <space>h <gv
+vmap <leader>l >gv
+vmap <leader>h <gv
 
 "normal command highlight"
-vmap <space>n :norm 
-
+vmap <leader>n :norm 
 
