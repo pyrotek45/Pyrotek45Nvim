@@ -10,9 +10,10 @@ autocmd VimEnter *
   \| endif
 
 call plug#begin('~/.config/nvim/plugged')   
-Plug 'wjsetzer/freepascal-vim'  " freepascal jank
-Plug 'morhetz/gruvbox'          " vim gruvbox color scheme
-Plug 'sheerun/vim-polyglot'     " syntax highlight for more langs
+Plug 'wjsetzer/freepascal-vim'                      " freepascal jank
+Plug 'morhetz/gruvbox'                              " vim gruvbox color scheme
+Plug 'sheerun/vim-polyglot'                         " syntax highlight for more langs
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 call plug#end()
 
 set nocompatible
@@ -90,4 +91,7 @@ vmap <leader>h <gv
 
 "normal command highlight"
 vmap <leader>n :norm 
+
+"fuzzy finder"
+nnoremap <leader>f :FZF<CR>
 
