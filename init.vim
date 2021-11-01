@@ -53,6 +53,7 @@ noremap <leader>Q :q! <cr>
 noremap <leader>q  :q <cr> 
 noremap <leader>n  :tabedit <cr> 
 noremap <leader>r  :read!  
+noremap <leader>d  :cd %:h<cr>  
 
 "edit files"
 noremap <leader>ec :tabedit $MYVIMRC <cr> 
