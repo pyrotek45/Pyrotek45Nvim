@@ -41,7 +41,7 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Edit config : `space -> e -> c` ( this will open your neovim configuration )
   - Source config : `space -> s -> c` ( this will source your config to take immediate effect )
 
-- Window Movement: ( Useful for switching between splits and the file tree )
+- Window Movement:
   - Move left : `space -> h`
   - Move up : `space -> k`
   - Move down : `space -> j`
