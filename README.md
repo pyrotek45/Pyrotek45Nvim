@@ -4,11 +4,11 @@ My neovim config inspired by spacevim (but with a smaller footprint)
 # how to install 
 
 - without flatpak
-> `git clone https://github.com/pyrotek45/pyrotek45_neovim.git && chmod +x pyrotek45_neovim/neovim_setup.sh && cd pyrotek45_neovim/ && bash neovim_setup.sh -n`
+> `git clone https://github.com/pyrotek45/Pyrotek45Nvim.git && chmod +x Pyrotek45Nvim/neovim_setup.sh && cd Pyrotek45Nvim/ && bash neovim_setup.sh -n`
 - with flatpak
-> `git clone https://github.com/pyrotek45/pyrotek45_neovim.git && chmod +x pyrotek45_neovim/neovim_setup.sh && cd pyrotek45_neovim/ && bash neovim_setup.sh -a`
+> `git clone https://github.com/pyrotek45/Pyrotek45Nvim.git && chmod +x Pyrotek45Nvim/neovim_setup.sh && cd Pyrotek45Nvim/ && bash neovim_setup.sh -a`
 - only flatpak
-> `git clone https://github.com/pyrotek45/pyrotek45_neovim.git && chmod +x pyrotek45_neovim/neovim_setup.sh && cd pyrotek45_neovim/ && bash neovim_setup.sh -f`
+> `git clone https://github.com/pyrotek45/Pyrotek45Nvim.git && chmod +x Pyrotek45Nvim/neovim_setup.sh && cd Pyrotek45Nvim/ && bash neovim_setup.sh -f`
 
 # basic usage
 
