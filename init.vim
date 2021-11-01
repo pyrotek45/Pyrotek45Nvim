@@ -79,7 +79,6 @@ noremap <leader>c :tabo <cr>
 "terminal commands
 noremap <leader>t :!
 
-"tools"
 "table"
 vmap <leader>t :!column -t <cr> gv
 
@@ -92,4 +91,4 @@ vmap <leader>n :norm
 
 "fuzzy finder"
 nnoremap <leader>f :FZF<CR>
-
+nnoremap <leader>F :FZF ~<CR>
