@@ -29,9 +29,8 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
 - Edit keybindings
   - edit config : `space -> e -> c` (this will open your neovim configuration)
   - source config : `space -> s -> c` (this will source your config to take immediate effect)
-  - open a file : `space -> e -> . ` (this will open a browser to select a file to edit)
+  - open file explorer : `space -> tab` (this will open a new panel on the left with a file tree)
   - open a file in a tab : `space -> e -> n` ( this will open a new tab and a browser to select a file to edit)
-  - open file tree : `space -> tab` (this will open a new panel on the left with a file tree)
 
 - Window movement ( Useful for switching between splits and the file tree)
   - move left : `space -> h`

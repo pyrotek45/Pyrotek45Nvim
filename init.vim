@@ -41,7 +41,6 @@ set ignorecase
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
-let g:netrw_keepdir= 0
 
 let mapleader = " "
 
@@ -58,9 +57,8 @@ noremap <leader>r  :read!
 "edit files"
 noremap <leader>ec :tabedit $MYVIMRC <cr> 
 noremap <leader>sc :source $MYVIMRC <cr> 
-noremap <leader>e. :e . <cr> 
+noremap <leader><tab> :e . <cr> 
 noremap <leader>en :tabedit . <cr> 
-noremap <leader><tab> :Lexplore <bar> :vertical resize 40 <cr> 
 
 "window movement"
 noremap <leader>l <C-w>l 
