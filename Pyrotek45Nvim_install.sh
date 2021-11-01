@@ -35,14 +35,17 @@ fi
 while true; do
    case "$option" in
       1) # display Help
-         normal_install
-         flatpak_install
+         post_install
+         install_normal
+         install_flatpak
          exit;;
       2) # display Help
-          normal_install
+          post_install
+          install_normal
          exit;;
       3) # display Help
-         flatpak_install
+         post_install
+         install_flatpak
          exit;;
    esac
    break;
