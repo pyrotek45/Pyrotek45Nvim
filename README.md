@@ -3,10 +3,19 @@ My neovim config inspired by spacevim (but with a smaller footprint)
 
 ![gruvbox theme preinstalled](https://camo.githubusercontent.com/a05028ef4dae5865098c508fc9f686b211f510198f07e6a5636734dbac618b30/687474703a2f2f692e696d6775722e636f6d2f476b496c38466e2e706e67)
 
-# how to install 
+# How to install 
 
-- Interactive installer
+- Interactive Installer
 > `bash -c "$(curl -fsLS https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh)"`
+
+- Automated Installer ( Normal )
+> `curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 1`
+
+- Automated Installer ( Flatpak )
+> `curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 2`
+
+- Automated Installer ( Both Normal and Flatpak )
+> `curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 3`
 
 # basic usage
 
