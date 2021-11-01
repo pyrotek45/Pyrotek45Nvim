@@ -37,14 +37,14 @@ while true; do
       1) # display Help
          post_install
          install_normal
-         install_flatpak
          exit;;
       2) # display Help
           post_install
-          install_normal
+          install_flatpak
          exit;;
       3) # display Help
          post_install
+         install_normal
          install_flatpak
          exit;;
    esac
