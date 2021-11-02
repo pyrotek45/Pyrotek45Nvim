@@ -54,6 +54,9 @@ let g:netrw_liststyle = 3
 
 let mapleader = " "
 
+autocmd BufEnter * :set nu
+autocmd TermEnter * :set nonu
+
 "Exit Terminal Mode With Escape"
 tnoremap <esc> <C-\><C-n> 
 
@@ -87,8 +90,9 @@ noremap <leader>( gT
 noremap <leader>) gt
 noremap <leader>c :tabo <cr>
 
-"Terminal Commands
+"Terminal"
 noremap <leader>t :!
+noremap <leader>T :term<cr>
 
 "Table"
 vmap <leader>t :!column -t <cr> gv
@@ -108,3 +112,5 @@ nnoremap <leader>F :FZF ~<CR>
 noremap <leader>gs :G <cr>
 noremap <leader>gd :Git diff <cr>
 noremap <leader>gb :Git blame <cr>
+
+
