@@ -106,3 +106,4 @@ nnoremap <leader>F :FZF ~<CR>
 "Git Tools"
 noremap <leader>gs :G <cr>
 noremap <leader>gd :Git diff <cr>
+noremap <leader>gb :Git blame <cr>
