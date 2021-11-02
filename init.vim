@@ -1,6 +1,6 @@
 "Auto-install Vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-    silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --CReate-dirs \
                 \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 endif
 
@@ -61,18 +61,18 @@ autocmd TermEnter * :set nonu
 tnoremap <esc> <C-\><C-n> 
 
 "Main Helper Hunctions"
-noremap <leader>w  :w <cr>
-noremap <leader>Q :q! <cr> 
-noremap <leader>q  :q <cr> 
-noremap <leader>n  :tabedit <cr> 
+noremap <leader>w  :w <CR>
+noremap <leader>Q :q! <CR> 
+noremap <leader>q  :q <CR> 
+noremap <leader>n  :tabedit <CR> 
 noremap <leader>r  :read!  
-noremap <leader>d  :cd %:h<cr>  
+noremap <leader>d  :cd %:h<CR>  
 
 "Edit Files"
-noremap <leader>ec :tabedit $MYVIMRC <cr> 
-noremap <leader>sc :source $MYVIMRC <cr> 
-noremap <leader><tab> :e . <cr> 
-noremap <leader>en :tabedit . <cr> 
+noremap <leader>ec :tabedit $MYVIMRC <CR> 
+noremap <leader>sc :source $MYVIMRC <CR> 
+noremap <leader><tab> :e . <CR> 
+noremap <leader>en :tabedit . <CR> 
 
 "Window Movement"
 noremap <leader>l <C-w>l 
@@ -82,20 +82,20 @@ noremap <leader>h <C-w>h
 noremap <leader>o <C-w>o 
 
 "Splits"
-noremap <leader>sv :vsplit <cr>
-noremap <leader>sh :split <cr>
+noremap <leader>sv :vsplit <CR>
+noremap <leader>sh :split <CR>
 
 "Tab Movement"
 noremap <leader>( gT
 noremap <leader>) gt
-noremap <leader>c :tabo <cr>
+noremap <leader>c :tabo <CR>
 
 "Terminal"
 noremap <leader>t :!
-noremap <leader>T :term<cr>
+noremap <leader>T :term<CR>
 
 "Table"
-vmap <leader>t :!column -t <cr> gv
+vmap <leader>t :!column -t <CR> gv
 
 "Indent"
 vmap <leader>l >gv
@@ -109,8 +109,8 @@ nnoremap <leader>f :FZF<CR>
 nnoremap <leader>F :FZF ~<CR>
 
 "Git Tools"
-noremap <leader>gs :G <cr>
-noremap <leader>gd :Git diff <cr>
-noremap <leader>gb :Git blame <cr>
+noremap <leader>gs :G <CR>
+noremap <leader>gd :Git diff <CR>
+noremap <leader>gb :Git blame <CR>
 
 
