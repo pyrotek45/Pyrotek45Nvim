@@ -50,8 +50,8 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Edit config : `space -> e -> c` ( This will open your neovim configuration )
   - Source config : `space -> s -> c` ( This will source your config to take immediate effect )
   
-- Multi Curser Mode:
-  - Hover over a word and press : `ctrl + n` ( This will add a curser to copies of the word ) 
+- Multi Cursor Mode:
+  - Hover over a word and press : `ctrl + n` ( This will add a cursor to copies of the word ) 
 
 - Window Movement:
   - Move left : `space -> h`
