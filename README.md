@@ -1,7 +1,7 @@
 # Pyrotek45Nvim
 My neovim config inspired by Spacevim (but with a smaller footprint).
 
-![gruvbox theme preinstalled](https://camo.githubusercontent.com/a05028ef4dae5865098c508fc9f686b211f510198f07e6a5636734dbac618b30/687474703a2f2f692e696d6775722e636f6d2f476b496c38466e2e706e67)
+![a screenshot](screenshot.png)
 
 # How to install.
 
