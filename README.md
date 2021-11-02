@@ -66,3 +66,9 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
 - Fuzzy Finder:
   - Activate the fuzzy finder in the current folder : `space -> f`
   - Activate the fuzzy finder in the home folder : `space -> F`
+
+- Git Tools:
+  - Git diff : `space -> g -> d`
+  - Git blame : `space -> g -> b`
+  - Git status : `space -> g -> s`
+
