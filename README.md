@@ -6,16 +6,24 @@ My neovim config inspired by Spacevim (but with a smaller footprint).
 # How to install.
 
 - Interactive Installer.
-> ```bash -c "$(curl -fsLS https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh)"```
+```bash
+bash -c "$(curl -fsLS https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh)"
+```
 
 - Automated Installer ( Normal )
-> ```curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 1```
+```bash
+curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 1
+```
 
 - Automated Installer ( Flatpak )
-> ```curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 2```
+```bash
+curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 2
+```
 
 - Automated Installer ( Both Normal and Flatpak )
-> ```curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 3```
+```bash
+curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 3\
+```
 
 # Basic usage.
 
