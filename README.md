@@ -22,7 +22,7 @@ curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvi
 
 - Automated Installer ( Both Normal and Flatpak )
 ```bash
-curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 3\
+curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/Pyrotek45Nvim_install.sh | bash -s 3
 ```
 
 # Basic usage.
