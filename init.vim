@@ -9,7 +9,8 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-call plug#begin('~/.config/nvim/plugged')   
+call plug#begin('~/.config/nvim/plugged')
+Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-plug'
 Plug 'yamatsum/nvim-cursorline'
