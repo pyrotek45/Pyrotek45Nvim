@@ -1,4 +1,4 @@
-"auto-install vim-plug
+"Auto-install Vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
     silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
                 \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -10,6 +10,7 @@ autocmd VimEnter *
   \| endif
 
 call plug#begin('~/.config/nvim/plugged')   
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/vim-plug'
 Plug 'yamatsum/nvim-cursorline'
 Plug 'machakann/vim-highlightedyank'
@@ -19,7 +20,6 @@ Plug 'sheerun/vim-polyglot'                         " syntax highlight for more 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 call plug#end()
 
-" set highlight yanked duration time to 1000 ms, i.e., 1 second
 let g:highlightedyank_highlight_duration = 200
 
 set nocompatible
@@ -53,10 +53,10 @@ let g:netrw_liststyle = 3
 
 let mapleader = " "
 
-"exit terminal mode with escape"
+"Exit Terminal Mode With Escape"
 tnoremap <esc> <C-\><C-n> 
 
-"main helper functions"
+"Main Helper Hunctions"
 noremap <leader>w  :w <cr>
 noremap <leader>Q :q! <cr> 
 noremap <leader>q  :q <cr> 
@@ -64,41 +64,45 @@ noremap <leader>n  :tabedit <cr>
 noremap <leader>r  :read!  
 noremap <leader>d  :cd %:h<cr>  
 
-"edit files"
+"Edit Files"
 noremap <leader>ec :tabedit $MYVIMRC <cr> 
 noremap <leader>sc :source $MYVIMRC <cr> 
 noremap <leader><tab> :e . <cr> 
 noremap <leader>en :tabedit . <cr> 
 
-"window movement"
+"Window Movement"
 noremap <leader>l <C-w>l 
 noremap <leader>k <C-w>k 
 noremap <leader>j <C-w>j 
 noremap <leader>h <C-w>h 
 noremap <leader>o <C-w>o 
 
-"splits"
+"Splits"
 noremap <leader>sv :vsplit <cr>
 noremap <leader>sh :split <cr>
 
-"tab movement"
+"Tab Movement"
 noremap <leader>( gT
 noremap <leader>) gt
 noremap <leader>c :tabo <cr>
 
-"terminal commands
+"Terminal Commands
 noremap <leader>t :!
 
-"table"
+"Table"
 vmap <leader>t :!column -t <cr> gv
 
-"indent"
+"Indent"
 vmap <leader>l >gv
 vmap <leader>h <gv
 
-"normal command highlight"
+"Normal Command"
 vmap <leader>n :norm 
 
-"fuzzy finder"
+"Fuzzy Finder"
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>F :FZF ~<CR>
+
+"Git Tools"
+noremap <leader>gs :G <cr>
+noremap <leader>gd :Git diff <cr>
