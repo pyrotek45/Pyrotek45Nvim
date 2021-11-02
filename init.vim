@@ -21,23 +21,26 @@ syntax on
 filetype on
 colorscheme gruvbox
 
-set inccommand=nosplit
-set showcmd
-set nohls
-set wildmenu
-set number
-set smarttab
-set expandtab
-set noerrorbells
-set shiftwidth=4
-set tabstop=4 softtabstop=4
-set nu
-set nowrap
-set smartcase
-set noswapfile
-set incsearch
-set colorcolumn=80
-set ignorecase
+let tabsize = 2                                                                     
+let &shiftwidth=tabsize                                                             
+let &tabstop=tabsize                                                                
+let &softtabstop=tabsize                                                            
+set smarttab                                                                        
+set expandtab                                                                       
+                                                                                    
+set inccommand=nosplit                                                              
+set showcmd                                                                         
+set nohls                                                                           
+set wildmenu                                                                        
+set number                                                                          
+set noerrorbells                                                                    
+set nu                                                                              
+set nowrap                                                                          
+set smartcase                                                                       
+set noswapfile                                                                      
+set incsearch                                                                       
+set colorcolumn=80                                                                  
+set ignorecase  
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
