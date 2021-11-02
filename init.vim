@@ -10,11 +10,15 @@ autocmd VimEnter *
   \| endif
 
 call plug#begin('~/.config/nvim/plugged')   
-Plug 'wjsetzer/freepascal-vim'                      " freepascal jank
+Plug 'machakann/vim-highlightedyank'
+Plug 'wjsetzer/freepascal-vim'                     
 Plug 'morhetz/gruvbox'                              " vim gruvbox color scheme
 Plug 'sheerun/vim-polyglot'                         " syntax highlight for more langs
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
 call plug#end()
+
+" set highlight yanked duration time to 1000 ms, i.e., 1 second
+let g:highlightedyank_highlight_duration = 200
 
 set nocompatible
 syntax on
