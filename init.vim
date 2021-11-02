@@ -1,8 +1,8 @@
-"auto-install vim-plug                                                                                                                
-if empty(glob('~/.config/nvim/autoload/plug.vim'))                                                                                    
+"auto-install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
     silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
                 \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-endif                       
+endif
 
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
@@ -10,8 +10,10 @@ autocmd VimEnter *
   \| endif
 
 call plug#begin('~/.config/nvim/plugged')   
+Plug 'junegunn/vim-plug'
+Plug 'yamatsum/nvim-cursorline'
 Plug 'machakann/vim-highlightedyank'
-Plug 'wjsetzer/freepascal-vim'                     
+Plug 'wjsetzer/freepascal-vim'
 Plug 'morhetz/gruvbox'                              " vim gruvbox color scheme
 Plug 'sheerun/vim-polyglot'                         " syntax highlight for more langs
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " fuzzy finder
@@ -25,26 +27,26 @@ syntax on
 filetype on
 colorscheme gruvbox
 
-let tabsize = 2                                                                     
-let &shiftwidth=tabsize                                                             
-let &tabstop=tabsize                                                                
-let &softtabstop=tabsize                                                            
-set smarttab                                                                        
-set expandtab                                                                       
-                                                                                    
-set inccommand=nosplit                                                              
-set showcmd                                                                         
-set nohls                                                                           
-set wildmenu                                                                        
-set number                                                                          
-set noerrorbells                                                                    
-set nu                                                                              
-set nowrap                                                                          
-set smartcase                                                                       
-set noswapfile                                                                      
-set incsearch                                                                       
-set colorcolumn=80                                                                  
-set ignorecase  
+let tabsize = 2
+let &shiftwidth=tabsize
+let &tabstop=tabsize
+let &softtabstop=tabsize
+set smarttab
+set expandtab
+
+set inccommand=nosplit
+set showcmd
+set nohls
+set wildmenu
+set number
+set noerrorbells
+set nu
+set nowrap
+set smartcase
+set noswapfile
+set incsearch
+set colorcolumn=80
+set ignorecase
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
