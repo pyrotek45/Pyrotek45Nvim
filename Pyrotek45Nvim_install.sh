@@ -32,15 +32,15 @@ else
 fi
 
 case "$option" in
-   1) # display Help                                                         
+   1)
       post_install                                                           
       install_normal                                                         
       exit;;                                                                 
-   2) # display Help                                                         
+   2)
        post_install                                                          
        install_flatpak                                                       
       exit;;                                                                 
-   3) # display Help                                                         
+   3)
       post_install                                                           
       install_normal                                                         
       install_flatpak                                                        
