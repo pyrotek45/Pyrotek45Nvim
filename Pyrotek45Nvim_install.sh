@@ -1,11 +1,11 @@
 #!/bin/bash
 
 post_install() {
-    echo "----------------------------------------------------"
-    echo "Neovim will install the plugins on its first launch"
-    echo "Just reload neovim to use as normal"
-    echo "Your old config has been moved to nvim_old"
-    echo "----------------------------------------------------"
+    echo " ----------------------------------------------------"
+    echo "| Pyrotek45Nvim has been installed! The plugins will |"
+    echo "| get installed on first launch and your old config  |"
+    echo "| config has been moved to nvim_old.                 |"
+    echo " ----------------------------------------------------"
 }
 
 install_normal() {
