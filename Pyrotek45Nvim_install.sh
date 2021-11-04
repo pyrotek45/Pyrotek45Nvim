@@ -4,6 +4,7 @@ post_install() {
     echo "----------------------------------------------------"
     echo "Neovim will install the plugins on its first launch"
     echo "Just reload neovim to use as normal"
+    echo "Your old config has been moved to nvim_old"
     echo "----------------------------------------------------"
 }
 
@@ -16,6 +17,12 @@ install_flatpak() {
     curl https://raw.githubusercontent.com/pyrotek45/Pyrotek45Nvim/main/init.vim -o ~/.var/app/io.neovim.nvim/config/nvim/init.vim
 }
 
+backup_normal() {
+    mv ~/.config/nvim ~/.config/nvim_old
+}
+backup_flatpak() {
+    mv ~/.var/app/io.neovim.nvim/config/nvim ~/.var/app/io.neovim.nvim/config/nvim_old
+}
 
 if [ "$1" = "" ]
 then
@@ -33,14 +40,18 @@ fi
 
 case "$option" in
     1)
+        backup_normal
         install_normal                                                         
         post_install                                                           
         ;;                                                                 
     2)
+        backup_flatpak
         install_flatpak                                                       
         post_install                                                          
         ;;                                                                 
     3)
+        backup_normal
+        backup_flatpak
         install_normal                                                         
         install_flatpak                                                        
         post_install                                                           
