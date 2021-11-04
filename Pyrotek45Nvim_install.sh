@@ -45,5 +45,8 @@ case "$option" in
         install_normal                                                         
         install_flatpak                                                        
         ;;                                                                 
+    *)
+        echo "Unkown option. Please choose between 1, 2 and 3."
+        ;;
 esac 
 
