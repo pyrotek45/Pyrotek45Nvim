@@ -54,9 +54,6 @@ let g:netrw_liststyle = 3
 
 let mapleader = " "
 
-autocmd BufEnter * :set nu
-autocmd TermEnter * :set nonu
-
 "Exit Terminal Mode With Escape"
 tnoremap <esc> <C-\><C-n> 
 
