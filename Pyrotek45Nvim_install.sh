@@ -32,18 +32,18 @@ else
 fi
 
 case "$option" in
-   1)
-      post_install                                                           
-      install_normal                                                         
-      exit;;                                                                 
-   2)
-       post_install                                                          
-       install_flatpak                                                       
-      exit;;                                                                 
-   3)
-      post_install                                                           
-      install_normal                                                         
-      install_flatpak                                                        
-      exit;;                                                                 
+    1)
+        post_install                                                           
+        install_normal                                                         
+        exit;;                                                                 
+    2)
+        post_install                                                          
+        install_flatpak                                                       
+        exit;;                                                                 
+    3)
+        post_install                                                           
+        install_normal                                                         
+        install_flatpak                                                        
+        exit;;                                                                 
 esac 
 
