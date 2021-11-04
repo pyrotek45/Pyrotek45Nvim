@@ -61,6 +61,8 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Close all other windows : `space -> o`
 
 - Splits and Tabs:
+  - Open vertical split : `space -> s -> v`
+  - Open horizontal split : `space -> s -> h`
   - Move to the left tab : `space -> (`
   - Move to the right tab : `space -> )`
   - Close all other tabs : `space -> c `
