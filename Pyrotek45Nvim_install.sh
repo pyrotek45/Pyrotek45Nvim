@@ -33,17 +33,17 @@ fi
 
 case "$option" in
     1)
-        post_install                                                           
         install_normal                                                         
+        post_install                                                           
         ;;                                                                 
     2)
-        post_install                                                          
         install_flatpak                                                       
+        post_install                                                          
         ;;                                                                 
     3)
-        post_install                                                           
         install_normal                                                         
         install_flatpak                                                        
+        post_install                                                           
         ;;                                                                 
     *)
         echo "Unkown option. Please choose between 1, 2 and 3."
