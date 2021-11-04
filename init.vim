@@ -1,6 +1,6 @@
 "Auto-install Vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-    silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --CReate-dirs \
+    silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
                 \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 endif
 
@@ -53,9 +53,6 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
 let mapleader = " "
-
-autocmd BufEnter * :set nu
-autocmd TermEnter * :set nonu
 
 "Exit Terminal Mode With Escape"
 tnoremap <esc> <C-\><C-n> 
