@@ -4,7 +4,6 @@ post_install() {
     echo "----------------------------------------------------"
     echo "Neovim will install the plugins on its first launch"
     echo "Just reload neovim to use as normal"
-    echo "Setting up neovim and vim-plug"
     echo "----------------------------------------------------"
 }
 
