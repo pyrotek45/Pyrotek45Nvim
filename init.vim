@@ -105,9 +105,13 @@ vmap <leader>n :norm
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>F :FZF ~<CR>
 
-"Git Tools"
+"Git shortcuts"
 noremap <leader>gs :G <CR>
 noremap <leader>gd :Git diff <CR>
 noremap <leader>gb :Git blame <CR>
-
+noremap <leader>ga :Git add 
+noremap <leader>gA :Git add %<CR>
+noremap <leader>gc :Git commit<CR>
+noremap <leader>gp :Git push<CR>
+noremap <leader>gP :Git pull<CR>
 
