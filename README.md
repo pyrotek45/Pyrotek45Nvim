@@ -87,5 +87,8 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Git status : `space -> g -> s`
 
 - Thanks to my Contributors!
-  - Novachiefd
+ 
+<a href="https://github.com/pyrotek45/Pyrotek45Nvim/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pyrotek45/Pyrotek45Nvim" />
+</a>
 
