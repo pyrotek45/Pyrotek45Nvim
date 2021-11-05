@@ -85,6 +85,11 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Git diff : `space -> g -> d`
   - Git blame : `space -> g -> b`
   - Git status : `space -> g -> s`
+  - Git stage/add : `space -> g -> a`
+  - Git stage current file : `space -> g -> A`
+  - Git commit : `space -> g -> c`
+  - Git push : `space -> g -> p`
+  - Git pull : `space -> g -> P`
 
 - Thanks to my Contributors!
   - Novachiefd
