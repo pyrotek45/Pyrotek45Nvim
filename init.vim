@@ -63,7 +63,7 @@ function FQuit()
 endfunction
 
 function GitPullSafe()
-  let choice = confirm("Are you sure you Pull the repo? Unsaved progress could be lost.", "&Yes\n&No", 2)
+  let choice = confirm("Are you sure you want to Pull the repo? Unsaved progress could be lost.", "&Yes\n&No", 2)
   if choice == 1
     :Git pull
   endif
