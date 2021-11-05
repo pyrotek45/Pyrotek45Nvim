@@ -4,7 +4,7 @@ post_install() {
     echo " ----------------------------------------------------"
     echo "| Pyrotek45Nvim has been installed! The plugins will |"
     echo "| get installed on first launch and your old config  |"
-    echo "| config has been moved to nvim_old.                 |"
+    echo "| and data have been moved to nvim_old.              |"
     echo " ----------------------------------------------------"
 }
 
@@ -18,10 +18,20 @@ install_flatpak() {
 }
 
 backup_normal() {
-    mv ~/.config/nvim ~/.config/nvim_old
+    if [ -e ~/.config/nvim ]
+    then
+        mv ~/.config/nvim ~/.config/nvim_old
+    fi
+    if [ -e ~/.local/share/nvim ]
+    then
+        mv ~/.local/share/nvim ~/.local/share/nvim_old
+    fi
 }
 backup_flatpak() {
-    mv ~/.var/app/io.neovim.nvim/config/nvim ~/.var/app/io.neovim.nvim/config/nvim_old
+    if [ -e ~/.var/app/io.neovim.nvim]
+    then
+        mv ~/.var/app/io.neovim.nvim ~/.var/app/io.neovim.nvim_old
+    fi
 }
 
 if [ "$1" = "" ]
