@@ -86,3 +86,6 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Git blame : `space -> g -> b`
   - Git status : `space -> g -> s`
 
+- Thanks to my Contributors!
+  - Novachiefd
+
