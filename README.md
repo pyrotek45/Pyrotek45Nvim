@@ -90,9 +90,4 @@ So, for example`space -> w` means pressing space (then letting go) and then quic
   - Git commit : `space -> g -> c`
   - Git pull : `space -> g -> P`
 
-- Thanks to my Contributors!
- 
-<a href="https://github.com/pyrotek45/Pyrotek45Nvim/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pyrotek45/Pyrotek45Nvim" />
-</a>
 
